@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <title>General English - Kelas Mesir</title>
+  <meta name="description" content="Dashboard Kelas Mesir - General English Universitas Hamzanwadi bersama Miss Ripka.">
+  <meta name="keywords" content="General English, Universitas Hamzanwadi, Kelas Mesir, Egypt Class">
+
+  <!-- CSS -->
+  <style>
+    *, html, body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #2E86C1;
+      color: white;
+      padding: 20px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .header-left,
+    .header-center,
+    .header-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-left {
+      flex: 1;
+      justify-content: flex-start;
+    }
+
+    .header-center {
+      flex: 2;
+      justify-content: center;
+    }
+
+    .header-right {
+      flex: 1;
+      justify-content: flex-end;
+    }
+
+    .logo-title {
+      font-size: 1.3em;
+      margin-left: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .logo-title:hover {
+      color: orange;
+      transform: rotate(2deg);
+    }
+
+    .Aman {
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .Aman:hover {
+      color: orange;
+      transform: rotate(2deg);
+    }
+
+    .instagram-button {
+      padding: 8px 16px;
+      background-color: #E1306C;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 0.85em;
+      transition: background-color 0.3s ease;
+    }
+
+    .instagram-button:hover {
+      background-color: #c22a5b;
+    }
+
+    .logo-img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .container {
+      padding: 25px 15px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .school-image {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .description {
+      margin-top: 20px;
+      font-size: 1em;
+      line-height: 1.5;
+      padding: 0 10px;
+    }
+
+    .bottom-links {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .bottom-links a {
+      padding: 8px 14px;
+      background-color: orange;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 0.9em;
+      transition: all 0.3s ease;
+    }
+
+    .bottom-links a:hover {
+      background-color: white;
+      color: orange;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.85em;
+      color: #777;
+    }
+
+    /* Responsif untuk layar kecil (HP) */
+    @media (max-width: 768px) {
+      .logo-title {
+        font-size: 1.1em;
+      }
+
+      .Aman {
+        font-size: 1em;
+        text-align: center;
+      }
+
+      .instagram-button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+      }
+
+      .bottom-links {
+        bottom: 10px;
+        right: 10px;
+      }
+
+      .bottom-links a {
+        padding: 7px 12px;
+        font-size: 0.85em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Tombol di pojok kanan bawah -->
+  <div class="bottom-links">
+    <a href="tentang.html">Kenangan</a>
+    <a href="tel:081933173018">Kontak</a>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <img src="Aset/Ikon/partner.png" alt="Logo General English" class="logo-img" />
+      <h1 class="logo-title">LOGO</h1>
+    </div>
+    <div class="header-center">
+      <h2 class="Aman">General English Universitas Hamzanwadi</h2>
+    </div>
+    <div class="header-right">
+      <a class="instagram-button" href="https://instagram.com/egypt_class.25" target="_blank" rel="noopener noreferrer">
+        Follow
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <h1>General English</h1>
+  <h2>Kelas Mesir</h2>
+
+  <div class="container">
+    <img class="school-image" src="Aset/foto/foto3.jpg" alt="Foto Bersama Kelas Mesir" />
+    <p class="description">
+      Selamat datang di <strong>Dashboard Kelas Egypt</strong> yang dibimbing oleh Miss Ripka.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; Maulidin Munir 2025
+  </footer>
+
+</body>
+</html>

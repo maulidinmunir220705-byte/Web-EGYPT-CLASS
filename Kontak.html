@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak - SMAN 1 Contoh</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #2E86C1;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .container {
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 600px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: left;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: orange;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+      align-self: flex-start;
+    }
+
+    button:hover {
+      background-color: darkorange;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #777;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 15px;
+      }
+
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      input, textarea {
+        font-size: 1em;
+      }
+
+      button {
+        width: 100%;
+        align-self: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hubungi Kami</h1>
+</header>
+
+<div class="container">
+  <form onsubmit="alert('Pesan berhasil dikirim!'); return false;">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+    <label for="pesan">Pesan:</label>
+    <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini" required></textarea>
+
+    <button type="submit">Kirim</button>
+  </form>
+</div>
+
+<footer>
+  &copy; Maulidin Munir 2025
+</footer>
+
+</body>
+</html>
